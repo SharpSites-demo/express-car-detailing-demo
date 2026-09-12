@@ -24,15 +24,18 @@ h1,h2,h3{line-height:1.08;letter-spacing:-.02em;font-weight:800}
 .btn-ghost:hover{background:rgba(255,255,255,.08)}
 .btn-accent{background:var(--accent);color:#04141a;box-shadow:0 8px 24px rgba(55,214,242,.25)}
 :focus-visible{outline:3px solid var(--accent2);outline-offset:2px;border-radius:8px}
+/* header */
 header{position:sticky;top:0;z-index:50;background:rgba(10,14,18,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:62px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.02em;font-size:15px}
 .brand small{display:block;font-size:10px;font-weight:700;letter-spacing:.16em;color:var(--muted)}
+@media (max-width:760px){.brand span{font-size:12.5px;line-height:1.15}}
 .navlinks{display:flex;gap:22px;font-size:13.5px;font-weight:600;color:var(--muted)}
 .navlinks a:hover{color:var(--ink)}
 .nav-cta{display:flex;gap:10px;align-items:center}
 .callchip{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:800;border:1px solid rgba(255,255,255,.2);padding:9px 14px;border-radius:10px}
 .callchip:hover{background:rgba(255,255,255,.07)}
+/* hero */
 .hero{padding:64px 0 56px;display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
 .hero h1{font-size:clamp(38px,5.4vw,62px);margin:16px 0 14px}
 .hero h1 em{font-style:normal;color:var(--accent);position:relative}
@@ -41,6 +44,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(10,14,18,.82);backdrop-f
 .trust{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
 .trust b{color:var(--ink)}
 .trust .star{color:#ffc94d}
+/* gloss stage (Canvas UI Liquid) */
 .gloss-stage{position:relative;overflow:hidden;border-radius:20px;border:1px solid var(--line);background:radial-gradient(120% 120% at 80% 0%,#12222b 0%,#0b1116 55%,#080c10 100%);aspect-ratio:16/11.5;box-shadow:0 30px 60px rgba(0,0,0,.45)}
 .liq-canvas{position:absolute;inset:0;width:100%;height:100%}
 .liq-output{pointer-events:none}
@@ -50,10 +54,12 @@ header{position:sticky;top:0;z-index:50;background:rgba(10,14,18,.82);backdrop-f
 .stage-cap .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
 .sweep{position:absolute;top:-25%;bottom:-25%;width:34%;left:0;background:linear-gradient(105deg,transparent,rgba(140,234,255,.16) 45%,rgba(255,255,255,.34) 50%,rgba(140,234,255,.16) 55%,transparent);transform:translateX(-132%) skewX(-16deg);animation:sweep 4.2s ease-in-out infinite;pointer-events:none;will-change:transform}
 @keyframes sweep{0%{transform:translateX(-132%) skewX(-16deg)}55%,100%{transform:translateX(347%) skewX(-16deg)}}
+/* sections */
 section{padding:72px 0}
 .sec-head{max-width:640px;margin-bottom:34px}
 .sec-head h2{font-size:clamp(28px,3.6vw,42px);margin:12px 0 10px}
 .sec-head p{color:var(--muted);font-size:16px}
+/* before/after */
 .ba-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
 .ba{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;user-select:none;--x:50%;background:#0b1015}
 .ba-layer{position:absolute;inset:0}
@@ -68,6 +74,7 @@ section{padding:72px 0}
 .ba-note{font-size:13.5px;color:var(--muted)}
 .slot{display:inline-block;margin-top:12px;font-size:12.5px;color:#7fa6b2;border:1px dashed rgba(55,214,242,.4);border-radius:10px;padding:9px 13px;background:rgba(55,214,242,.05)}
 .light .slot{color:#3d7484;border-color:rgba(9,110,133,.35);background:rgba(9,110,133,.05)}
+/* services */
 .light{background:#f3f7f8;color:#0e1a20}
 .light .kicker{color:#0a7d97}
 .light .kicker::before{background:#0a7d97}
@@ -79,12 +86,14 @@ section{padding:72px 0}
 .card h3{font-size:18px;margin-bottom:7px}
 .card p{font-size:14px;color:#4c626c}
 .card.slotcard{background:transparent;border:1px dashed #9fc4cf;box-shadow:none;display:flex;align-items:center;justify-content:center;text-align:center;color:#3d7484;font-weight:700;font-size:14px}
+/* coating band */
 .band{background:linear-gradient(120deg,#0c1a21,#0a0e12);border-block:1px solid var(--line)}
 .band-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
 .band ul{list-style:none;margin-top:18px;display:grid;gap:12px}
 .band li{display:flex;gap:11px;align-items:flex-start;color:var(--muted);font-size:15px}
 .band li::before{content:"";flex:0 0 auto;width:20px;height:20px;margin-top:2px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#8ceaff,#0e9cbd);box-shadow:0 0 10px rgba(55,214,242,.5)}
 .band li b{color:var(--ink)}
+/* reviews */
 .rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .review{background:#fff;border:1px solid #e2eaec;border-radius:16px;padding:20px}
 .review .stars{color:#ffb400;font-size:14px;letter-spacing:2px;margin-bottom:10px}
@@ -92,11 +101,13 @@ section{padding:72px 0}
 .review .who{margin-top:14px;font-size:13px;font-weight:800}
 .review .who span{display:block;font-weight:600;color:#7a8f98;font-size:12px}
 .glink{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:800;color:#0a7d97}
+/* booking */
 .book{background:radial-gradient(90% 130% at 50% 0%,#0f2c36 0%,#0a0e12 60%);text-align:center}
 .book h2{font-size:clamp(30px,4vw,46px);margin:12px 0 10px}
 .book p{color:var(--muted);max-width:52ch;margin:0 auto 26px}
 .book-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .book .fine{margin-top:18px;font-size:13px;color:var(--muted)}
+/* visit */
 .vgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .vpanel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
 .vpanel h3{font-size:17px;margin-bottom:14px}
@@ -104,10 +115,12 @@ section{padding:72px 0}
 .vrow:last-child{border-bottom:0}
 .vrow b{color:var(--ink);font-weight:700;min-width:74px}
 .map-slot{margin-top:14px;border:1px dashed rgba(55,214,242,.35);border-radius:12px;padding:26px 16px;text-align:center;font-size:13px;color:#7fa6b2;background:rgba(55,214,242,.04)}
+/* footer + sticky bar */
 footer{border-top:1px solid var(--line);padding:30px 0;font-size:13px;color:var(--muted)}
 footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
 .mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(10,14,18,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));gap:10px}
 .mbar .btn{flex:1;padding:12px 10px;font-size:14px}
+/* reveal — progressive enhancement: hidden only when html.js-anim is set by JS */
 .js-anim .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
 .js-anim .rv.in{opacity:1;transform:none}
 @media (max-width:900px){.cards,.rgrid{grid-template-columns:repeat(2,1fr)}.ba-wrap,.band-grid{grid-template-columns:1fr}}
@@ -148,6 +161,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
 </header>
 
 <main id="top">
+<!-- HERO -->
 <div class="wrap hero">
   <div>
     <span class="kicker">Ceramic &amp; graphene coating · Krishna Nagar</span>
@@ -194,6 +208,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
   </div>
 </div>
 
+<!-- BEFORE / AFTER -->
 <section id="results">
   <div class="wrap">
     <div class="sec-head rv">
@@ -236,6 +251,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
   </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services" class="light">
   <div class="wrap">
     <div class="sec-head rv">
@@ -274,6 +290,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
   </div>
 </section>
 
+<!-- COATING BAND -->
 <section id="coating" class="band">
   <div class="wrap band-grid">
     <div class="rv">
@@ -300,6 +317,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
   </div>
 </section>
 
+<!-- REVIEWS -->
 <section id="reviews" class="light">
   <div class="wrap">
     <div class="sec-head rv">
@@ -317,6 +335,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
   </div>
 </section>
 
+<!-- BOOKING -->
 <section id="book" class="book">
   <div class="wrap">
     <div class="rv">
@@ -335,6 +354,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
   </div>
 </section>
 
+<!-- VISIT -->
 <section id="visit">
   <div class="wrap">
     <div class="sec-head rv">
@@ -373,51 +393,63 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
 
 <script src="canvas-liquid.js" defer></script>
 <script defer>
+/* Canvas UI Liquid — gloss interaction on the hero stage */
 window.addEventListener('DOMContentLoaded', function () {
   try {
     var CL = window.CanvasLiquid;
-    if (CL && CL.createLiquid) {
-      var stage = document.getElementById('glossStage');
-      var content = document.getElementById('glossContent');
-      if (stage && content) {
-        var native = CL.supportsHtmlInCanvas && CL.supportsHtmlInCanvas();
-        var source = document.createElement('canvas');
-        source.className = 'liq-canvas';
-        source.setAttribute('layoutsubtree', 'true');
-        source.setAttribute('aria-hidden', 'true');
-        var output = document.createElement('canvas');
-        output.className = 'liq-canvas liq-output';
-        output.setAttribute('aria-hidden', 'true');
-        if (native) {
-          stage.insertBefore(source, content);
-          source.appendChild(content);
-        }
-        stage.appendChild(output);
-        var inst = CL.createLiquid({ source: source, content: content, output: output }, {
-          simResolution: 128,
-          dyeResolution: 512,
-          densityDissipation: 0.96,
-          velocityDissipation: 1.05,
-          pressure: 0.8,
-          pressureIterations: 8,
-          curl: 2.6,
-          radius: 0.26,
-          force: 1.15,
-          intensity: 1.1,
-          distortion: 0.22,
-          blend: 2.4,
-          color: [0.216, 0.839, 0.949],
-          rainbow: false
-        });
-        if (!inst) {
-          if (content.parentNode !== stage) stage.appendChild(content);
-          if (output.parentNode) output.parentNode.removeChild(output);
-          if (source.parentNode) source.parentNode.removeChild(source);
-        }
-      }
+    var stage = document.getElementById('glossStage');
+    var content = document.getElementById('glossContent');
+    if (CL && CL.createLiquid && stage && content &&
+        !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var inited = false;
+      var initLiquid = function () {
+        if (inited) return;
+        inited = true;
+        try {
+          var native = CL.supportsHtmlInCanvas && CL.supportsHtmlInCanvas();
+          var source = document.createElement('canvas');
+          source.className = 'liq-canvas';
+          source.setAttribute('layoutsubtree', 'true');
+          source.setAttribute('aria-hidden', 'true');
+          var output = document.createElement('canvas');
+          output.className = 'liq-canvas liq-output';
+          output.setAttribute('aria-hidden', 'true');
+          if (native) {
+            stage.insertBefore(source, content);
+            source.appendChild(content);
+          }
+          stage.appendChild(output);
+          var inst = CL.createLiquid({ source: source, content: content, output: output }, {
+            simResolution: 128,
+            dyeResolution: 512,
+            densityDissipation: 0.96,
+            velocityDissipation: 1.05,
+            pressure: 0.8,
+            pressureIterations: 4,
+            curl: 2.6,
+            radius: 0.26,
+            force: 1.15,
+            intensity: 1.1,
+            distortion: 0.22,
+            blend: 2.4,
+            color: [0.216, 0.839, 0.949],
+            rainbow: false
+          });
+          if (inst) {
+            inst.splat(0.5, 0.55, 0, -0.5);
+          } else {
+            if (content.parentNode !== stage) stage.appendChild(content);
+            if (output.parentNode) output.parentNode.removeChild(output);
+            if (source.parentNode) source.parentNode.removeChild(source);
+          }
+        } catch (e) { /* plain content stays */ }
+      };
+      stage.addEventListener('pointerenter', initLiquid, { once: true, passive: true });
+      stage.addEventListener('pointerdown', initLiquid, { once: true, passive: true });
     }
   } catch (e) { /* plain content stays */ }
 
+  /* before/after slider */
   var range = document.getElementById('baRange');
   var ba = document.getElementById('ba');
   if (range && ba) {
@@ -426,6 +458,7 @@ window.addEventListener('DOMContentLoaded', function () {
     set(range.value);
   }
 
+  /* reveal on scroll — only when IO exists; safety force-reveal */
   var els = document.querySelectorAll('.rv');
   if ('IntersectionObserver' in window) {
     document.documentElement.classList.add('js-anim');
