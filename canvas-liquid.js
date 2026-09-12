@@ -17,11 +17,15 @@ var CanvasLiquid = (() => {
     return to;
   };
   var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+  // src/lib/Liquid/LiquidVanilla.ts
   var LiquidVanilla_exports = {};
   __export(LiquidVanilla_exports, {
     createLiquid: () => createLiquid,
     supportsHtmlInCanvas: () => supportsHtmlInCanvas
   });
+
+  // src/lib/rect-cache.ts
   function createRectCache(element) {
     let current = element.getBoundingClientRect();
     const refresh = () => {
@@ -45,6 +49,8 @@ var CanvasLiquid = (() => {
       }
     };
   }
+
+  // src/lib/Liquid/LiquidVanilla.ts
   var DEFAULTS = {
     simResolution: 128,
     dyeResolution: 512,
