@@ -1,0 +1,21 @@
+canvas-liquid.js is the Canvas UI "Liquid" vanilla WebGL build, vendored from
+Canvas UI (https://canvasui.dev — github.com/DavidHDev/canvas-ui) by David Haz,
+licensed under the MIT + Commons Clause License Condition v1.0.
+
+MIT + Commons Clause License Condition v1.0
+Copyright (c) 2026 David Haz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+Commons Clause Restriction: the components themselves may not be sold,
+sublicensed, or redistributed standalone — use as part of an application,
+website, or product is permitted.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
