@@ -2,376 +2,365 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Express Car Detailing &amp; Coating — Ceramic Coating & Detailing in Krishna Nagar, Delhi</title>
-<meta name="description" content="Full detailing, paint correction, rubbing & polish and ceramic/graphene coating in Krishna Nagar, Delhi. 4.6★ from 130 Google reviews. Open daily 9 AM–7 PM. Book on WhatsApp.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Express Car Detailing &amp; Coating — Car Detailing &amp; Ceramic Coating in Krishna Nagar, Delhi</title>
+<meta name="description" content="Full detailing, paint correction, interior dry cleaning and ceramic &amp; graphene coating in Krishna Nagar, Delhi. Established 2013 · 4.6★ from 130 Google reviews. Open daily 9 AM–7 PM.">
+<meta property="og:title" content="Express Car Detailing &amp; Coating — Krishna Nagar, Delhi">
+<meta property="og:description" content="Full detailing, paint correction and ceramic &amp; graphene coating. Established 2013 · 4.6★ from 130 Google reviews. Open daily 9 AM–7 PM.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sharpsites-demo.github.io/express-car-detailing-demo/">
+<link rel="canonical" href="https://sharpsites-demo.github.io/express-car-detailing-demo/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoWash","name":"Express Car Detailing & Coating","url":"https://sharpsites-demo.github.io/express-car-detailing-demo/","telephone":"+918527936779","foundingDate":"2013","address":{"@type":"PostalAddress","streetAddress":"Shop No 1, Gali No. 1, East Laxmi Market, Block C, New Brij Puri, Krishna Nagar","addressLocality":"Delhi","postalCode":"110051","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":28.6436,"longitude":77.282696},"openingHours":"Mo-Su 09:00-19:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"130"},"sameAs":"https://www.google.com/maps/search/?api=1&query=Express%20Car%20Detailing%20%26%20Coating&query_place_id=ChIJ__ebe6z8DDkR0qm1voTCLRs"}
+</script>
 <style>
-:root{--bg:#0a0e12;--panel:#10161d;--panel2:#0d1319;--ink:#eef4f6;--muted:#9db4bd;--accent:#37d6f2;--accent2:#8ceaff;--line:rgba(255,255,255,.09);--green:#25d366;--radius:18px}
+:root{--paper:#f4f2ee;--ink:#101214;--mut:#4a5158;--hair:#d9d5cc;--hair2:#e5e2da;--org:#c2410c;--org-big:#e8590c;--inkmut:#a8adb3;--wa:#25d366}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+body{background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-img,svg{display:block;max-width:100%}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-h1,h2,h3{line-height:1.08;letter-spacing:-.02em;font-weight:800}
-.kicker{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
-.kicker::before{content:"";width:22px;height:2px;background:var(--accent);border-radius:2px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:15px;padding:14px 22px;border-radius:12px;border:1px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s ease;min-height:48px}
+svg{display:block}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+h1,h2,h3{line-height:1.06;letter-spacing:-.022em;font-weight:800}
+:focus-visible{outline:3px solid var(--org-big);outline-offset:2px}
+/* index kicker */
+.idx{display:flex;align-items:center;gap:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;font-weight:700;letter-spacing:.22em;color:var(--org);text-transform:uppercase}
+.idx::after{content:"";flex:1;height:1px;background:var(--hair)}
+.idx .n{color:var(--ink)}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:15px;padding:15px 24px;border-radius:6px;border:1.5px solid var(--ink);min-height:48px;transition:transform .15s ease,background .15s ease,color .15s ease}
 .btn:active{transform:scale(.98)}
-.btn-ghost{border-color:rgba(255,255,255,.22);color:var(--ink);background:rgba(255,255,255,.03)}
-.btn-ghost:hover{background:rgba(255,255,255,.08)}
-.btn-accent{background:var(--accent);color:#04141a;box-shadow:0 8px 24px rgba(55,214,242,.25)}
-.wa-fab{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;flex:0 0 auto;border-radius:50%;background:#25d366;color:#fff;box-shadow:0 6px 18px rgba(37,211,102,.35);transition:transform .15s ease,box-shadow .15s ease}
-.wa-fab:hover{box-shadow:0 10px 26px rgba(37,211,102,.5)}
-.wa-fab:active{transform:scale(.95)}
-.wa-fab svg{width:26px;height:26px}
-.wa-fab.lg{width:56px;height:56px}
-.wa-fab.lg svg{width:30px;height:30px}
-:focus-visible{outline:3px solid var(--accent2);outline-offset:2px;border-radius:8px}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-ink:hover{background:#26292d}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:rgba(16,18,20,.06)}
+.phone{white-space:nowrap}
 /* header */
-header{position:sticky;top:0;z-index:50;background:rgba(10,14,18,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:62px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.02em;font-size:15px}
-.brand small{display:block;font-size:10px;font-weight:700;letter-spacing:.16em;color:var(--muted)}
-@media (max-width:760px){.brand span{font-size:12.5px;line-height:1.15}}
-.navlinks{display:flex;gap:22px;font-size:13.5px;font-weight:600;color:var(--muted)}
+header{position:sticky;top:0;z-index:50;background:rgba(244,242,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{display:flex;flex-direction:column;line-height:1.05}
+.brand b{font-size:16px;letter-spacing:.04em}
+.brand span{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:9px;font-weight:700;letter-spacing:.24em;color:var(--mut);margin-top:3px}
+.navlinks{display:flex;gap:20px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;font-weight:700;letter-spacing:.08em;color:var(--mut)}
 .navlinks a:hover{color:var(--ink)}
-.nav-cta{display:flex;gap:10px;align-items:center}
-.callchip{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:800;border:1px solid rgba(255,255,255,.2);padding:9px 14px;border-radius:10px}
-.callchip:hover{background:rgba(255,255,255,.07)}
+.callchip{display:inline-flex;align-items:center;gap:8px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;font-weight:700;border:1.5px solid var(--ink);padding:9px 13px;border-radius:6px}
+.callchip:hover{background:var(--ink);color:var(--paper)}
 /* hero */
-.hero{padding:64px 0 56px;display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
-.hero h1{font-size:clamp(38px,5.4vw,62px);margin:16px 0 14px}
-.hero h1 em{font-style:normal;color:var(--accent);position:relative}
-.hero p.lead{color:var(--muted);font-size:17px;max-width:46ch}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:24px 0 18px}
-.trust{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.hero{padding:58px 0 64px;display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(40px,5.6vw,66px);margin:18px 0 16px}
+.hero h1 em{font-style:normal;color:var(--org-big)}
+.hero p.lead{color:var(--mut);font-size:17px;max-width:46ch}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:26px 0 20px}
+.trust{display:flex;gap:8px 22px;flex-wrap:wrap;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:var(--mut)}
 .trust b{color:var(--ink)}
-.trust .star{color:#ffc94d}
-/* gloss stage (Canvas UI Liquid) */
-.gloss-stage{position:relative;overflow:hidden;border-radius:20px;border:1px solid var(--line);background:radial-gradient(120% 120% at 80% 0%,#12222b 0%,#0b1116 55%,#080c10 100%);aspect-ratio:16/11.5;box-shadow:0 30px 60px rgba(0,0,0,.45)}
-.liq-canvas{position:absolute;inset:0;width:100%;height:100%}
-.liq-output{pointer-events:none}
-.liq-content{position:relative;width:100%;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:22px}
-.liq-content .car-art{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:12% 8% 18%}
-.stage-cap{position:relative;font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}
-.stage-cap .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
-.sweep{position:absolute;top:-25%;bottom:-25%;width:34%;left:0;background:linear-gradient(105deg,transparent,rgba(140,234,255,.16) 45%,rgba(255,255,255,.34) 50%,rgba(140,234,255,.16) 55%,transparent);transform:translateX(-132%) skewX(-16deg);animation:sweep 4.2s ease-in-out infinite;pointer-events:none;will-change:transform}
-@keyframes sweep{0%{transform:translateX(-132%) skewX(-16deg)}55%,100%{transform:translateX(347%) skewX(-16deg)}}
+.trust .star{color:var(--org-big)}
+/* blueprint panel */
+.bp{position:relative;border:1px solid var(--hair);background:#faf9f6;border-radius:4px;padding:10px}
+.bp svg{width:100%;height:auto}
+.bp-cap{display:flex;justify-content:space-between;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10px;letter-spacing:.18em;color:var(--mut);padding:8px 6px 2px;text-transform:uppercase}
 /* sections */
-section{padding:72px 0}
-.sec-head{max-width:640px;margin-bottom:34px}
-.sec-head h2{font-size:clamp(28px,3.6vw,42px);margin:12px 0 10px}
-.sec-head p{color:var(--muted);font-size:16px}
-/* before/after */
-.ba-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
-.ba{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;user-select:none;--x:50%;background:#0b1015}
-.ba-layer{position:absolute;inset:0}
-.ba-after{background:linear-gradient(160deg,#0e2a33,#0a141b 60%,#070b0f)}
-.ba-before{background:linear-gradient(160deg,#1a1d20,#101214 60%,#0a0b0c);clip-path:inset(0 calc(100% - var(--x)) 0 0)}
-.ba-handle{position:absolute;top:0;bottom:0;left:var(--x);width:2px;background:var(--accent);box-shadow:0 0 18px rgba(55,214,242,.8);z-index:3;pointer-events:none}
-.ba-handle::after{content:"◂ ▸";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--accent);color:#04141a;font-size:11px;font-weight:900;padding:7px 10px;border-radius:99px;letter-spacing:.05em;white-space:nowrap}
-.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:4;-webkit-appearance:none}
-.ba-tag{position:absolute;top:14px;font-size:11px;font-weight:900;letter-spacing:.14em;padding:6px 11px;border-radius:99px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.14);z-index:2}
-.ba-tag-b{left:14px;color:#c8ccd0}
-.ba-tag-a{right:14px;color:var(--accent2)}
-.ba-note{font-size:13.5px;color:var(--muted)}
-.slot{display:inline-block;margin-top:12px;font-size:12.5px;color:#7fa6b2;border:1px dashed rgba(55,214,242,.4);border-radius:10px;padding:9px 13px;background:rgba(55,214,242,.05)}
-.light .slot{color:#3d7484;border-color:rgba(9,110,133,.35);background:rgba(9,110,133,.05)}
-/* services */
-.light{background:#f3f7f8;color:#0e1a20}
-.light .kicker{color:#0a7d97}
-.light .kicker::before{background:#0a7d97}
-.light .sec-head p{color:#4c626c}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:#fff;border:1px solid #e2eaec;border-radius:16px;padding:22px;box-shadow:0 2px 10px rgba(10,40,50,.05);transition:transform .18s ease,box-shadow .18s ease}
-.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(10,40,50,.1)}
-.card .ico{width:42px;height:42px;border-radius:12px;background:linear-gradient(140deg,#e6fbff,#d2f4fa);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:#0a7d97}
-.card h3{font-size:18px;margin-bottom:7px}
-.card p{font-size:14px;color:#4c626c}
-.card.slotcard{background:transparent;border:1px dashed #9fc4cf;box-shadow:none;display:flex;align-items:center;justify-content:center;text-align:center;color:#3d7484;font-weight:700;font-size:14px}
-/* coating band */
-.band{background:linear-gradient(120deg,#0c1a21,#0a0e12);border-block:1px solid var(--line)}
-.band-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-.band ul{list-style:none;margin-top:18px;display:grid;gap:12px}
-.band li{display:flex;gap:11px;align-items:flex-start;color:var(--muted);font-size:15px}
-.band li::before{content:"";flex:0 0 auto;width:20px;height:20px;margin-top:2px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#8ceaff,#0e9cbd);box-shadow:0 0 10px rgba(55,214,242,.5)}
-.band li b{color:var(--ink)}
-/* reviews */
-.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.review{background:#fff;border:1px solid #e2eaec;border-radius:16px;padding:20px}
-.review .stars{color:#ffb400;font-size:14px;letter-spacing:2px;margin-bottom:10px}
-.review p{font-size:14px;color:#33454d}
-.review .who{margin-top:14px;font-size:13px;font-weight:800}
-.review .who span{display:block;font-weight:600;color:#7a8f98;font-size:12px}
-.glink{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:800;color:#0a7d97}
+section{padding:76px 0}
+.sec-head{margin-bottom:40px}
+.sec-head h2{font-size:clamp(30px,4vw,46px);margin:14px 0 10px;max-width:20ch}
+.sec-head p{color:var(--mut);font-size:16px;max-width:56ch}
+/* services — spec list */
+.svc{border-top:1px solid var(--hair)}
+.srow{display:grid;grid-template-columns:70px 1fr 1.35fr;gap:20px;align-items:baseline;padding:22px 4px;border-bottom:1px solid var(--hair);transition:background .15s ease}
+.srow:hover{background:rgba(16,18,20,.03)}
+.srow .num{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;font-weight:700;color:var(--org)}
+.srow h3{font-size:19px;margin-bottom:6px}
+.srow p{font-size:14.5px;color:var(--mut)}
+.svc-note{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:16px 4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:var(--mut)}
+.svc-note b{color:var(--ink)}
+/* process — timeline */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:8px}
+.steps::before{content:"";position:absolute;top:19px;left:4%;right:4%;height:1.5px;background:var(--ink)}
+.step{padding:0 18px 0 0;position:relative}
+.step .node{width:38px;height:38px;border:1.5px solid var(--ink);background:var(--paper);border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;font-weight:800;position:relative;z-index:1}
+.step:last-child .node{background:var(--ink);color:var(--paper)}
+.step h3{font-size:17px;margin:16px 0 7px}
+.step p{font-size:14px;color:var(--mut)}
+/* coating — inverted band */
+.band{background:var(--ink);color:#eceae5}
+.band .idx{color:#ff8c4d}
+.band .idx .n{color:#eceae5}
+.band .idx::after{background:rgba(255,255,255,.16)}
+.band-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}
+.band h2{font-size:clamp(28px,3.6vw,42px);margin:14px 0 12px}
+.band p.sub{color:var(--inkmut);font-size:16px;max-width:52ch}
+.band ul{list-style:none;margin:22px 0 26px;display:grid;gap:0}
+.band li{display:flex;gap:14px;align-items:baseline;padding:13px 0;border-top:1px solid rgba(255,255,255,.14);font-size:15px;color:#d6d4cf}
+.band li:first-child{border-top:0}
+.band li .k{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;font-weight:700;color:#ff8c4d;flex:0 0 30px}
+.band li b{color:#fff}
+.band .btn{border-color:#eceae5;color:#eceae5}
+.band .btn-ink{background:#eceae5;color:var(--ink);border-color:#eceae5}
+.band .slot{color:#b9c0c6;border-color:rgba(255,140,77,.5);background:rgba(255,140,77,.06)}
+/* slots (owner content) */
+.slot{display:inline-block;margin-top:14px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;color:#8a939b;border:1px dashed #b9b4a8;border-radius:4px;padding:8px 12px;background:rgba(16,18,20,.025)}
+/* reviews — editorial */
+.rgrid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:36px;align-items:start}
+.quote{border-left:2px solid var(--ink);padding-left:20px}
+.quote.big{border-left-width:3px}
+.quote p{font-size:15px;color:#26292d}
+.quote.big p{font-size:21px;line-height:1.4;font-weight:600;letter-spacing:-.01em}
+.quote .who{margin-top:14px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;font-weight:700;letter-spacing:.06em;color:var(--mut);text-transform:uppercase}
+.quote .who b{color:var(--ink)}
+.quote .stars{color:var(--org-big);font-size:12px;letter-spacing:3px;margin-bottom:10px}
+.glink{display:inline-flex;align-items:center;gap:8px;margin-top:30px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;font-weight:800;letter-spacing:.06em;color:var(--org);border-bottom:1.5px solid var(--org);padding-bottom:3px}
 /* booking */
-.book{background:radial-gradient(90% 130% at 50% 0%,#0f2c36 0%,#0a0e12 60%);text-align:center}
-.book h2{font-size:clamp(30px,4vw,46px);margin:12px 0 10px}
-.book p{color:var(--muted);max-width:52ch;margin:0 auto 26px}
+.book{text-align:center;border-top:1px solid var(--hair)}
+.book h2{font-size:clamp(30px,4.2vw,48px);margin:14px auto 12px;max-width:22ch}
+.book p{color:var(--mut);max-width:54ch;margin:0 auto 28px}
 .book-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;align-items:center}
-.book .fine{margin-top:18px;font-size:13px;color:var(--muted)}
+.book .fine{margin-top:20px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:var(--mut)}
 /* visit */
-.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.vpanel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
-.vpanel h3{font-size:17px;margin-bottom:14px}
-.vrow{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--muted)}
-.vrow:last-child{border-bottom:0}
-.vrow b{color:var(--ink);font-weight:700;min-width:74px}
-.map-slot{margin-top:14px;border:1px dashed rgba(55,214,242,.35);border-radius:12px;padding:26px 16px;text-align:center;font-size:13px;color:#7fa6b2;background:rgba(55,214,242,.04)}
-/* footer + sticky bar */
-footer{border-top:1px solid var(--line);padding:30px 0;font-size:13px;color:var(--muted)}
-footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
-.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(10,14,18,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));gap:10px}
-.mbar .btn{flex:1;padding:12px 10px;font-size:14px}
-.mbar .wa-fab{align-self:center}
-/* reveal — progressive enhancement: hidden only when html.js-anim is set by JS */
-.js-anim .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.vgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:stretch}
+.vpanel{border:1px solid var(--hair);border-radius:4px;background:#faf9f6;padding:26px}
+.vpanel h3{font-size:16px;margin-bottom:16px;letter-spacing:.02em}
+.vrow{display:flex;gap:16px;padding:11px 0;border-top:1px solid var(--hair2);font-size:14.5px;color:var(--mut)}
+.vrow:first-of-type{border-top:0}
+.vrow b{color:var(--ink);font-weight:700;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;min-width:86px;padding-top:3px}
+.map-slot{border:1px dashed #b9b4a8;border-radius:4px;padding:34px 16px;text-align:center;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;color:#8a939b;background:rgba(16,18,20,.02)}
+.vpanel .btn{margin-top:18px}
+/* footer */
+footer{border-top:1px solid var(--hair);padding:26px 0 30px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;color:var(--mut)}
+footer .wrap{display:flex;justify-content:space-between;gap:10px 20px;flex-wrap:wrap;align-items:center}
+footer a{color:var(--ink);font-weight:700}
+/* floating WhatsApp — official circular icon only */
+.wa-fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));z-index:80;width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.28);transition:transform .15s ease,box-shadow .15s ease,opacity .25s ease}
+.wa-fab.hide{opacity:0;pointer-events:none;transform:translateY(14px)}
+.wa-fab:hover{box-shadow:0 12px 28px rgba(0,0,0,.36)}
+.wa-fab:active{transform:scale(.94)}
+.wa-fab svg{width:29px;height:29px}
+/* reveal */
+.js-anim .rv{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
 .js-anim .rv.in{opacity:1;transform:none}
-@media (max-width:900px){.cards,.rgrid{grid-template-columns:repeat(2,1fr)}.ba-wrap,.band-grid{grid-template-columns:1fr}}
+/* responsive */
+@media (max-width:960px){.rgrid{grid-template-columns:1fr 1fr}.quote.big{grid-column:1/-1}.band-grid{grid-template-columns:1fr;gap:34px}}
+@media (max-width:860px){.steps{grid-template-columns:1fr;gap:26px}.steps::before{left:19px;right:auto;top:0;bottom:0;width:1.5px;height:auto}.step{padding:0 0 0 52px}.step .node{position:absolute;left:0;top:0}}
 @media (max-width:760px){
  .navlinks{display:none}
- .callchip{display:none}
- .brand span{white-space:nowrap}
- .hero{grid-template-columns:1fr;padding:44px 0 40px;gap:30px}
- .cards,.rgrid,.vgrid{grid-template-columns:1fr}
- section{padding:56px 0}
- .mbar{display:flex}
- body{padding-bottom:70px}
+ .hero{grid-template-columns:1fr;padding:40px 0 52px;gap:36px}
+ .srow{grid-template-columns:44px 1fr;gap:8px 14px;padding:18px 2px}
+ .srow p{grid-column:2}
+ .rgrid{grid-template-columns:1fr;gap:26px}
+ .vgrid{grid-template-columns:1fr}
+ section{padding:58px 0}
+ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 }
-@media (prefers-reduced-motion:reduce){
- *{animation:none!important;transition:none!important}
- html{scroll-behavior:auto}
- .js-anim .rv{opacity:1;transform:none}
-}
-@media print{.js-anim .rv{opacity:1!important;transform:none!important}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js-anim .rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Express Car Detailing home">
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true"><rect x="1" y="1" width="28" height="28" rx="8" stroke="#37d6f2" stroke-width="2"/><path d="M7 19c4-1 6-6 8-6s4 5 8 6" stroke="#37d6f2" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="9" r="2" fill="#37d6f2"/></svg>
-      <span>EXPRESS DETAILING<small>KRISHNA NAGAR · DELHI</small></span>
+    <a class="brand" href="#top" aria-label="Express Car Detailing and Coating — home">
+      <b>EXPRESS</b><span>DETAILING &amp; COATING · DELHI</span>
     </a>
     <nav class="navlinks" aria-label="Sections">
-      <a href="#results">Results</a><a href="#services">Services</a><a href="#coating">Coating</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+      <a href="#services">SERVICES</a><a href="#process">PROCESS</a><a href="#coating">COATING</a><a href="#reviews">REVIEWS</a><a href="#visit">VISIT</a>
     </nav>
-    <div class="nav-cta">
-      <a class="callchip" href="tel:+918527936779"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>85279 36779</a>
-      <a class="wa-fab" href="https://wa.me/918527936779?text=Hi%20Express%20Car%20Detailing!%20I%27d%20like%20to%20book%20a%20detailing%20slot%20for%20my%20car." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-    </div>
+    <a class="callchip phone" href="tel:+918527936779"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>85279 36779</a>
   </div>
 </header>
 
 <main id="top">
-<!-- HERO -->
+
+<!-- 01 HERO -->
 <div class="wrap hero">
   <div>
-    <span class="kicker">Ceramic &amp; graphene coating · Krishna Nagar</span>
-    <h1>Dull paint in.<br><em>Mirror gloss</em> out.</h1>
-    <p class="lead">Full detailing, paint correction, rubbing &amp; polish and ceramic coating — done by the team Krishna Nagar car owners have rated <b style="color:var(--ink)">4.6★ on Google</b> since 2013.</p>
+    <div class="idx" style="justify-content:flex-start"><span class="n">EST. 2013</span><span>KRISHNA NAGAR · DELHI</span></div>
+    <h1>Car detailing,<br>done to <em>spec.</em></h1>
+    <p class="lead">Full detailing, paint correction, interior dry cleaning and ceramic &amp; graphene coating — from a Krishna Nagar studio rated <b style="color:var(--ink)">4.6★ by 130 customers</b> on Google.</p>
     <div class="hero-ctas">
-      <a class="wa-fab lg" href="https://wa.me/918527936779?text=Hi%20Express%20Car%20Detailing!%20I%27d%20like%20to%20book%20a%20detailing%20slot%20for%20my%20car." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-      <a class="btn btn-ghost" href="#services">See services</a>
+      <a class="btn btn-ink phone" href="tel:+918527936779">Call 85279 36779</a>
+      <a class="btn btn-out" href="#services">See the service list</a>
     </div>
     <div class="trust">
       <span><span class="star">★</span> <b>4.6</b> · 130 Google reviews</span>
-      <span>Since <b>2013</b></span>
       <span>Open daily <b>9 AM – 7 PM</b></span>
+      <span>Onsite service available</span>
     </div>
   </div>
-
-  <div class="gloss-stage" id="glossStage" aria-label="Interactive gloss preview — move your cursor across the paint">
-    <div class="liq-content" id="glossContent">
-      <div class="car-art" aria-hidden="true">
-        <svg viewBox="0 0 460 210" role="img" aria-label="Stylised car with a mirror-gloss finish">
-          <defs>
-            <linearGradient id="paint" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#9fe9f8"/><stop offset=".45" stop-color="#2fb9d8"/><stop offset="1" stop-color="#0a4a5e"/>
-            </linearGradient>
-            <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#d9f6fc"/><stop offset="1" stop-color="#5db6c9"/>
-            </linearGradient>
-          </defs>
-          <ellipse cx="230" cy="182" rx="185" ry="12" fill="rgba(55,214,242,.12)"/>
-          <path d="M60 158c-8 0-14-6-13-14 2-16 14-24 34-27 14-2 22-4 30-12 16-16 38-30 74-31 40-1 66 10 86 30 8 8 20 11 38 13 22 3 36 10 40 22 3 10-4 19-15 19Z" fill="url(#paint)"/>
-          <path d="M150 104c12-13 30-22 55-23 28-1 48 7 64 23l-8 3c-14-12-32-18-56-17-22 1-38 8-49 17Z" fill="url(#glass)" opacity=".9"/>
-          <path d="M96 122c30-6 210-6 268 2" stroke="rgba(255,255,255,.55)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
-          <circle cx="132" cy="160" r="21" fill="#0b1015" stroke="#22323a" stroke-width="5"/><circle cx="132" cy="160" r="8" fill="#31424c"/>
-          <circle cx="330" cy="160" r="21" fill="#0b1015" stroke="#22323a" stroke-width="5"/><circle cx="330" cy="160" r="8" fill="#31424c"/>
-          <path d="M40 190h380" stroke="rgba(140,234,255,.35)" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="sweep" aria-hidden="true"></div>
-      <p class="stage-cap"><span class="dot"></span>The mirror-finish standard — move across the paint</p>
-    </div>
+  <div class="bp" role="img" aria-label="Engineering-style drawing of a car marking paint, glass, trim and wheels">
+    <svg viewBox="0 0 560 340" fill="none" aria-hidden="true">
+      <!-- corner registration marks -->
+      <g stroke="#b9b4a8" stroke-width="1.2">
+        <path d="M20 28v-8h8M540 28v-8h-8M20 312v8h8M540 312v8h-8"/>
+      </g>
+      <!-- ground line + ticks -->
+      <path d="M56 270h448" stroke="#101214" stroke-width="1.5"/>
+      <g stroke="#b9b4a8" stroke-width="1">
+        <path d="M90 270v6M140 270v6M190 270v6M240 270v6M290 270v6M340 270v6M390 270v6M440 270v6M490 270v6"/>
+      </g>
+      <!-- car body -->
+      <path d="M84 250v-26c0-13 9-21 24-24l44-8c14-2 22-6 30-14 15-15 36-27 68-28h76c34 1 56 12 74 30 6 6 14 9 26 11l38 7c17 3 26 11 26 24v28" stroke="#101214" stroke-width="2" stroke-linecap="round"/>
+      <!-- glass -->
+      <path d="M178 192c12-22 34-34 62-36h64c26 2 46 12 60 30l-8 6H186Z" stroke="#101214" stroke-width="1.6"/>
+      <!-- door + handles -->
+      <path d="M288 158v88" stroke="#101214" stroke-width="1.4"/>
+      <path d="M232 206h26M318 206h26" stroke="#101214" stroke-width="1.6" stroke-linecap="round"/>
+      <!-- wheels -->
+      <circle cx="158" cy="250" r="27" stroke="#101214" stroke-width="2"/><circle cx="158" cy="250" r="10" stroke="#101214" stroke-width="1.6"/>
+      <circle cx="416" cy="250" r="27" stroke="#101214" stroke-width="2"/><circle cx="416" cy="250" r="10" stroke="#101214" stroke-width="1.6"/>
+      <!-- leaders -->
+      <g stroke-width="1.2">
+        <path d="M268 146V96" stroke="#e8590c"/><path d="M352 158v-44" stroke="#101214"/><path d="M120 236h-52" stroke="#101214"/><path d="M416 282v22" stroke="#101214"/>
+      </g>
+      <rect x="264" y="92" width="8" height="8" fill="#e8590c"/>
+      <rect x="348" y="110" width="7" height="7" fill="#101214"/>
+      <rect x="60" y="232" width="7" height="7" fill="#101214"/>
+      <rect x="412" y="300" width="7" height="7" fill="#101214"/>
+      <g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="10" font-weight="700" letter-spacing="1.5">
+        <text x="280" y="100" fill="#c2410c">01 PAINT</text>
+        <text x="362" y="118" fill="#4a5158">02 GLASS</text>
+        <text x="20" y="226" fill="#4a5158">03 TRIM</text>
+        <text x="426" y="310" fill="#4a5158">04 WHEELS</text>
+      </g>
+    </svg>
+    <div class="bp-cap"><span>FIG. 01 — VEHICLE, SIDE</span><span>SCALE: SHOWROOM</span></div>
   </div>
 </div>
 
-<!-- BEFORE / AFTER -->
-<section id="results">
+<!-- 02 SERVICES -->
+<section id="services">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="kicker">Before / after</span>
-      <h2>Proof, not promises.</h2>
-      <p>Drag the slider — this is what paint correction, polishing and coating do to a daily-driven car.</p>
+      <div class="idx"><span class="n">02</span><span>SERVICES</span></div>
+      <h2>The service list.</h2>
+      <p>Everything is done in-house at the Krishna Nagar studio — from a careful hand wash to full paint correction and coating.</p>
     </div>
-    <div class="ba-wrap">
-      <div class="ba rv" id="ba">
-        <div class="ba-layer ba-after" aria-hidden="true">
-          <svg viewBox="0 0 460 210" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-            <defs><linearGradient id="apaint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a7ecfa"/><stop offset=".5" stop-color="#2fb9d8"/><stop offset="1" stop-color="#0b4d61"/></linearGradient></defs>
-            <ellipse cx="230" cy="182" rx="185" ry="12" fill="rgba(55,214,242,.14)"/>
-            <path d="M60 158c-8 0-14-6-13-14 2-16 14-24 34-27 14-2 22-4 30-12 16-16 38-30 74-31 40-1 66 10 86 30 8 8 20 11 38 13 22 3 36 10 40 22 3 10-4 19-15 19Z" fill="url(#apaint)"/>
-            <path d="M96 122c30-6 210-6 268 2" stroke="rgba(255,255,255,.6)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
-            <circle cx="132" cy="160" r="21" fill="#0b1015" stroke="#22323a" stroke-width="5"/><circle cx="330" cy="160" r="21" fill="#0b1015" stroke="#22323a" stroke-width="5"/>
-            <g fill="#dffaff"><circle cx="120" cy="70" r="2.4"/><circle cx="205" cy="48" r="1.8"/><circle cx="330" cy="62" r="2.2"/><circle cx="395" cy="105" r="1.6"/></g>
-          </svg>
-        </div>
-        <div class="ba-layer ba-before" id="baBefore" aria-hidden="true">
-          <svg viewBox="0 0 460 210" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-            <path d="M60 158c-8 0-14-6-13-14 2-16 14-24 34-27 14-2 22-4 30-12 16-16 38-30 74-31 40-1 66 10 86 30 8 8 20 11 38 13 22 3 36 10 40 22 3 10-4 19-15 19Z" fill="#3a4046"/>
-            <g stroke="rgba(255,255,255,.16)" stroke-width="1" fill="none">
-              <path d="M110 96c22-10 44-12 66-8"/><path d="M140 84c18-8 38-10 56-7"/><path d="M210 120c26-6 52-6 76 0"/><path d="M250 100c20-4 40-4 58 2"/><path d="M120 130c30-8 70-10 104-6"/>
-            </g>
-            <circle cx="132" cy="160" r="21" fill="#0b0d0e" stroke="#26292c" stroke-width="5"/><circle cx="330" cy="160" r="21" fill="#0b0d0e" stroke="#26292c" stroke-width="5"/>
-          </svg>
-        </div>
-        <span class="ba-tag ba-tag-b">Before</span><span class="ba-tag ba-tag-a">After</span>
-        <div class="ba-handle" aria-hidden="true"></div>
-        <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Reveal before and after">
-      </div>
-      <div class="rv">
-        <h3 style="font-size:22px;margin-bottom:10px">Swirl marks, dull panels, neglected cabins — reversed.</h3>
-        <p class="ba-note">Machine polishing removes the swirls and oxidation; ceramic and graphene coating lock in the depth and gloss long after the car leaves the bay.</p>
-        <p class="ba-note" style="margin-top:10px">Every vehicle is photographed before and after handover, so you can see exactly what changed.</p>
-        <span class="slot">[Add real before/after photos of your vehicles]</span>
-      </div>
+    <div class="svc rv">
+      <div class="srow"><span class="num">01</span><h3>Full detailing</h3><p>The complete reset — exterior care and deep cabin cleaning in one planned visit.</p></div>
+      <div class="srow"><span class="num">02</span><h3>Paint correction &amp; rubbing polish</h3><p>Machine polishing that works on swirl marks and dull, tired paint before any protection goes on.</p></div>
+      <div class="srow"><span class="num">03</span><h3>Ceramic, graphene &amp; teflon coating</h3><p>Advanced graphene and 3M ceramic coating technologies, applied over corrected paint.</p></div>
+      <div class="srow"><span class="num">04</span><h3>Interior dry cleaning &amp; stain extraction</h3><p>Steam cleaning, stain extraction and leather conditioning for seats, carpets and roof lining.</p></div>
+      <div class="srow"><span class="num">05</span><h3>Engine bay, wheels &amp; glass</h3><p>Engine bay cleaning, wheel restoration and crystal-clear glass treatment — the details most washes skip.</p></div>
+      <div class="srow"><span class="num">06</span><h3>Hand wash &amp; undercarriage cleaning</h3><p>Careful hand washing with undercarriage cleaning for the parts you never see.</p></div>
+    </div>
+    <div class="svc-note rv">
+      <span><b>Memberships available</b> — ask at the studio or by phone</span>
+      <span>[Add package &amp; pricing details]</span>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="light">
+<!-- 03 PROCESS -->
+<section id="process" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="kicker">Services</span>
-      <h2>Detailing, done end to end.</h2>
-      <p>One studio for everything your paint and cabin need — from a same-day dry clean to full ceramic protection.</p>
+      <div class="idx"><span class="n">03</span><span>PROCESS</span></div>
+      <h2>How a detail runs.</h2>
+      <p>One car at a time, in a fixed sequence — you approve the work before it starts.</p>
     </div>
-    <div class="cards">
-      <div class="card rv">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17h16M6 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0Zm8 0a2 2 0 1 0 4 0 2 2 0 0 0-4 0ZM5 13l2-5h10l2 5M9 8V6h6v2" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-        <h3>Interior dry cleaning</h3>
-        <p>Seats, carpets and roof lining deep-cleaned and refreshed — the cabin smells new again.</p>
-      </div>
-      <div class="card rv">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 4v4m0 8v4m8-8h-4m-8 0H4" stroke="currentColor" stroke-width="1.8"/></svg></div>
-        <h3>Rubbing &amp; polish</h3>
-        <p>Compound and machine polish that cuts swirls and brings depth back to dull paint.</p>
-      </div>
-      <div class="card rv">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 15h18M5 15a7 7 0 0 1 14 0M12 8V5m-5 4 1.5 1.5M17 9l-1.5 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-        <h3>Full detailing</h3>
-        <p>Exterior wash, decontamination, polish and cabin care — the complete reset in one visit.</p>
-      </div>
-      <div class="card rv">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l2.4 5.6L20 11l-5.6 2.4L12 19l-2.4-5.6L4 11l5.6-2.4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-        <h3>Ceramic &amp; graphene coating</h3>
-        <p>Advanced 3M ceramic and graphene technologies for a deeper finish that stays protected.</p>
-      </div>
-      <div class="card rv">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12c3-6 13-6 16 0-3 6-13 6-16 0Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="2.6" stroke="currentColor" stroke-width="1.8"/></svg></div>
-        <h3>Paint correction</h3>
-        <p>Multi-stage correction that removes swirls, oxidation and light scratches before coating.</p>
-      </div>
-      <div class="card slotcard rv">[Add your full service list &amp; packages]</div>
+    <div class="steps rv">
+      <div class="step"><div class="node">01</div><h3>Inspect &amp; quote</h3><p>A walkaround of the car and a clear price before any work begins.</p></div>
+      <div class="step"><div class="node">02</div><h3>Deep clean</h3><p>Interior extraction and a proper exterior decontamination wash.</p></div>
+      <div class="step"><div class="node">03</div><h3>Correct</h3><p>Machine polishing on swirls, oxidation and dull panels.</p></div>
+      <div class="step"><div class="node">04</div><h3>Protect &amp; hand over</h3><p>Wax or ceramic / graphene coating, then the car goes back finished.</p></div>
     </div>
   </div>
 </section>
 
-<!-- COATING BAND -->
+<!-- 04 COATING -->
 <section id="coating" class="band">
   <div class="wrap band-grid">
     <div class="rv">
-      <span class="kicker">The upgrade worth doing once</span>
-      <h2 style="font-size:clamp(26px,3.4vw,38px);margin:12px 0 8px">Coating that locks the gloss in.</h2>
+      <div class="idx"><span class="n">04</span><span>PROTECTION</span></div>
+      <h2>Coating that locks the work in.</h2>
+      <p class="sub">Correction alone doesn't last. A proper coating keeps the finish the polish created — that's why it goes on last, never first.</p>
       <ul>
-        <li><span><b>Graphene &amp; 3M ceramic technologies</b> — advanced coatings applied by a team that does this every day.</span></li>
-        <li><span><b>Deeper gloss, easier washes</b> — dirt sits on the coating, not the paint.</span></li>
-        <li><span><b>Done right the first time</b> — paint is corrected and prepped before any coating goes on.</span></li>
+        <li><span class="k">A</span><span><b>Graphene &amp; 3M ceramic technologies</b> — advanced coatings applied by a team that works with them daily.</span></li>
+        <li><span class="k">B</span><span><b>Applied over corrected paint</b> — swirls are removed first, so the coating locks in a clean finish.</span></li>
+        <li><span class="k">C</span><span><b>Easier upkeep</b> — coated paint is simpler to wash and keep looking fresh between services.</span></li>
       </ul>
-      <div class="hero-ctas" style="margin-top:24px">
-        <a class="wa-fab lg" href="https://wa.me/918527936779?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20ceramic%20%2F%20graphene%20coating%20for%20my%20car." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-      </div>
+      <a class="btn btn-ink phone" href="tel:+918527936779">Call to ask about coating</a>
+      <span class="slot">[Add coating packages &amp; warranty details]</span>
     </div>
     <div class="rv" style="text-align:center">
-      <svg viewBox="0 0 300 220" width="100%" aria-hidden="true">
-        <defs><linearGradient id="drop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bdf2ff"/><stop offset="1" stop-color="#0e9cbd"/></linearGradient></defs>
-        <path d="M150 18c34 44 54 74 54 102a54 54 0 1 1-108 0c0-28 20-58 54-102Z" fill="url(#drop)" opacity=".92"/>
-        <path d="M128 118c-2 14 4 26 16 32" stroke="rgba(255,255,255,.75)" stroke-width="5" stroke-linecap="round" fill="none"/>
-        <ellipse cx="150" cy="196" rx="66" ry="8" fill="rgba(55,214,242,.15)"/>
+      <svg viewBox="0 0 300 260" width="100%" aria-hidden="true" fill="none">
+        <path d="M150 30c30 40 48 66 48 92a48 48 0 1 1-96 0c0-26 18-52 48-92Z" stroke="#eceae5" stroke-width="2"/>
+        <path d="M132 122c-2 12 3 22 13 28" stroke="#ff8c4d" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="196" cy="196" r="9" stroke="#eceae5" stroke-width="1.6"/>
+        <circle cx="222" cy="182" r="5.5" stroke="#eceae5" stroke-width="1.4"/>
+        <path d="M60 232h180" stroke="#eceae5" stroke-width="1.4"/>
+        <g stroke="#8a939b" stroke-width="1"><path d="M80 232v5M110 232v5M140 232v5M170 232v5M200 232v5M230 232v5"/></g>
+        <g stroke="#8a939b" stroke-width="1.2"><path d="M40 40h10M45 35v10M260 40h10M265 35v10"/></g>
       </svg>
-      <span class="slot" style="margin-top:6px">[Add coating packages &amp; warranty details]</span>
     </div>
   </div>
 </section>
 
-<!-- REVIEWS -->
-<section id="reviews" class="light">
+<!-- 05 REVIEWS -->
+<section id="reviews">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="kicker">Google reviews</span>
-      <h2>130 reviews. 4.6 stars. Real customers.</h2>
-      <p>Straight from our Google listing — the same record your neighbours see before they visit.</p>
+      <div class="idx"><span class="n">05</span><span>GOOGLE REVIEWS</span></div>
+      <h2>130 reviews. 4.6 stars.</h2>
+      <p>Quoted straight from the studio's Google listing.</p>
     </div>
     <div class="rgrid">
-      <div class="review rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Staff was very professional and friendly. Excellent job cleaning my car inside and outside — they even went the extra mile to remove a stubborn stain."</p><div class="who">Gazal Saini<span>5★ Google review</span></div></div>
-      <div class="review rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Brilliant team, they are specialists in ceramic coating at reasonable price."</p><div class="who">Alakshendra Singh<span>5★ Google review</span></div></div>
-      <div class="review rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Timely, prompt service. Transparent pricing. Job done well. Highly recommended."</p><div class="who">Sandeep Singh<span>5★ Google review</span></div></div>
+      <div class="quote big rv">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Staff was very professional and friendly. Excellent job cleaning my car inside and outside — they even went the extra mile to remove a stubborn stain."</p>
+        <div class="who"><b>Gazal Saini</b> · 5★ Google review</div>
+      </div>
+      <div class="quote rv">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Timely, prompt service. Transparent pricing. Job done well. Highly recommended."</p>
+        <div class="who"><b>Sandeep Singh</b> · 5★ Google review</div>
+      </div>
+      <div class="quote rv">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Brilliant team, they are specialists in ceramic coating at reasonable price."</p>
+        <div class="who"><b>Alakshendra Singh</b> · 5★ Google review</div>
+      </div>
     </div>
-    <a class="glink rv" href="https://www.google.com/maps/search/?api=1&amp;query=Express%20Car%20Detailing%20%26%20Coating&amp;query_place_id=ChIJ__ebe6z8DDkR0qm1voTCLRs" target="_blank" rel="noopener">Read all 130 reviews on Google
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7m0 0H9m8 0v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="glink rv" href="https://www.google.com/maps/search/?api=1&amp;query=Express%20Car%20Detailing%20%26%20Coating&amp;query_place_id=ChIJ__ebe6z8DDkR0qm1voTCLRs" target="_blank" rel="noopener">READ ALL 130 REVIEWS ON GOOGLE
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7m0 0H9m8 0v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="rv"><span class="slot">[Add real vehicle &amp; workshop photos]</span></div>
   </div>
 </section>
 
-<!-- BOOKING -->
+<!-- 06 BOOKING -->
 <section id="book" class="book">
   <div class="wrap">
     <div class="rv">
-      <span class="kicker" style="justify-content:center">Booking</span>
-      <h2>Book your slot in one message.</h2>
-      <p>Tell us your car and the service you want — we'll confirm your day and time. Most detailing and dry-cleaning visits are same-day or next-day.</p>
+      <div class="idx" style="justify-content:center"><span class="n">06</span><span>BOOKING</span></div>
+      <h2>Book a slot in one call or message.</h2>
+      <p>Send the car model, the service you want and your preferred day — the studio confirms your time. Call for a quote over the phone, or message any time during working hours.</p>
       <div class="book-ctas">
-        <a class="wa-fab lg" href="https://wa.me/918527936779?text=Hi%20Express%20Car%20Detailing!%20I%27d%20like%20to%20book%20a%20detailing%20slot%20for%20my%20car." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-        <a class="btn btn-ghost" href="tel:+918527936779">Call 85279 36779</a>
+        <a class="btn btn-ink phone" href="tel:+918527936779">Call 85279 36779</a>
+        <a class="btn btn-out" href="#visit">Studio address &amp; hours</a>
       </div>
-      <p class="fine">Open every day, 9:00 AM – 7:00 PM · East Laxmi Market, Krishna Nagar</p>
+      <p class="fine">OPEN DAILY 9:00 AM – 7:00 PM · EAST LAXMI MARKET, KRISHNA NAGAR</p>
     </div>
   </div>
 </section>
 
-<!-- VISIT -->
-<section id="visit">
+<!-- 07 VISIT -->
+<section id="visit" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="kicker">Visit us</span>
-      <h2>Find us in Krishna Nagar.</h2>
+      <div class="idx"><span class="n">07</span><span>VISIT</span></div>
+      <h2>Find the studio.</h2>
     </div>
     <div class="vgrid">
       <div class="vpanel rv">
         <h3>Studio &amp; contact</h3>
-        <div class="vrow"><b>Address</b><span>Shop No. 1, Gali No. 1, East Laxmi Market, Block C, New Brij Puri, Krishna Nagar, Delhi 110051</span></div>
-        <div class="vrow"><b>Hours</b><span>Every day · 9:00 AM – 7:00 PM</span></div>
-        <div class="vrow"><b>Phone</b><span><a href="tel:+918527936779" style="color:var(--accent2)">+91 85279 36779</a></span></div>
-        <a class="btn btn-ghost" style="margin-top:16px" href="https://www.google.com/maps/search/?api=1&amp;query=Express%20Car%20Detailing%20%26%20Coating&amp;query_place_id=ChIJ__ebe6z8DDkR0qm1voTCLRs" target="_blank" rel="noopener">Get directions</a>
+        <div class="vrow"><b>Address</b><span>Shop No 1, Gali No. 1, East Laxmi Market, Block C, New Brij Puri, Krishna Nagar, Delhi 110051</span></div>
+        <div class="vrow"><b>Hours</b><span>Monday – Sunday · 9:00 AM – 7:00 PM</span></div>
+        <div class="vrow"><b>Phone</b><span><a class="phone" href="tel:+918527936779" style="font-weight:700;color:var(--ink)">+91 85279 36779</a></span></div>
+        <div class="vrow"><b>Payments</b><span>Credit card, debit card &amp; contactless accepted</span></div>
+        <a class="btn btn-out" href="https://www.google.com/maps/search/?api=1&amp;query=Express%20Car%20Detailing%20%26%20Coating&amp;query_place_id=ChIJ__ebe6z8DDkR0qm1voTCLRs" target="_blank" rel="noopener">Get directions</a>
       </div>
       <div class="vpanel rv">
         <h3>Reaching the studio</h3>
         <div class="map-slot">[Add Google Maps embed]</div>
-        <p style="font-size:13.5px;color:var(--muted);margin-top:14px">East Laxmi Market, a minute off the main Krishna Nagar stretch — parking right outside the bay.</p>
+        <p style="font-size:13.5px;color:var(--mut);margin-top:14px">East Laxmi Market, just off the main Krishna Nagar stretch — easy to reach from Block C and New Brij Puri.</p>
       </div>
     </div>
   </div>
@@ -380,84 +369,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
 
 <footer>
   <div class="wrap">
-    <span><b style="color:var(--ink)">Express Car Detailing &amp; Coating</b> · Krishna Nagar, Delhi</span>
-    <span>Open daily 9 AM – 7 PM · <a href="tel:+918527936779" style="color:var(--accent2)">+91 85279 36779</a></span>
+    <span><a href="#top">EXPRESS CAR DETAILING &amp; COATING</a> · KRISHNA NAGAR, DELHI · EST. 2013</span>
+    <span><a class="phone" href="tel:+918527936779">+91 85279 36779</a> · DAILY 9 AM – 7 PM</span>
   </div>
 </footer>
 
-<div class="mbar" role="navigation" aria-label="Quick contact">
-  <a class="wa-fab" href="https://wa.me/918527936779?text=Hi%20Express%20Car%20Detailing!%20I%27d%20like%20to%20book%20a%20detailing%20slot%20for%20my%20car." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-  <a class="btn btn-ghost" href="tel:+918527936779">Call</a>
-</div>
+<!-- Official WhatsApp — circular icon only -->
+<a class="wa-fab" href="https://wa.me/918527936779" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
-<script src="canvas-liquid.js" defer></script>
-<script defer>
-/* Canvas UI Liquid — gloss interaction on the hero stage */
+<script>
 window.addEventListener('DOMContentLoaded', function () {
-  try {
-    var CL = window.CanvasLiquid;
-    var stage = document.getElementById('glossStage');
-    var content = document.getElementById('glossContent');
-    if (CL && CL.createLiquid && stage && content &&
-        !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      var inited = false;
-      var initLiquid = function () {
-        if (inited) return;
-        inited = true;
-        try {
-          var native = CL.supportsHtmlInCanvas && CL.supportsHtmlInCanvas();
-          var source = document.createElement('canvas');
-          source.className = 'liq-canvas';
-          source.setAttribute('layoutsubtree', 'true');
-          source.setAttribute('aria-hidden', 'true');
-          var output = document.createElement('canvas');
-          output.className = 'liq-canvas liq-output';
-          output.setAttribute('aria-hidden', 'true');
-          if (native) {
-            stage.insertBefore(source, content);
-            source.appendChild(content);
-          }
-          stage.appendChild(output);
-          var inst = CL.createLiquid({ source: source, content: content, output: output }, {
-            simResolution: 128,
-            dyeResolution: 512,
-            densityDissipation: 0.96,
-            velocityDissipation: 1.05,
-            pressure: 0.8,
-            pressureIterations: 4,
-            curl: 2.6,
-            radius: 0.26,
-            force: 1.15,
-            intensity: 1.1,
-            distortion: 0.22,
-            blend: 2.4,
-            color: [0.216, 0.839, 0.949],
-            rainbow: false
-          });
-          if (inst) {
-            inst.splat(0.5, 0.55, 0, -0.5);
-          } else {
-            if (content.parentNode !== stage) stage.appendChild(content);
-            if (output.parentNode) output.parentNode.removeChild(output);
-            if (source.parentNode) source.parentNode.removeChild(source);
-          }
-        } catch (e) { /* plain content stays */ }
-      };
-      stage.addEventListener('pointerenter', initLiquid, { once: true, passive: true });
-      stage.addEventListener('pointerdown', initLiquid, { once: true, passive: true });
-    }
-  } catch (e) { /* plain content stays */ }
-
-  /* before/after slider */
-  var range = document.getElementById('baRange');
-  var ba = document.getElementById('ba');
-  if (range && ba) {
-    var set = function (v) { ba.style.setProperty('--x', v + '%'); };
-    range.addEventListener('input', function () { set(range.value); });
-    set(range.value);
-  }
-
-  /* reveal on scroll — only when IO exists; safety force-reveal */
   var els = document.querySelectorAll('.rv');
   if ('IntersectionObserver' in window) {
     document.documentElement.classList.add('js-anim');
@@ -467,9 +390,19 @@ window.addEventListener('DOMContentLoaded', function () {
       });
     }, { threshold: 0.05, rootMargin: '0px 0px -6% 0px' });
     els.forEach(function (el) { io.observe(el); });
-    setTimeout(function () {
-      els.forEach(function (el) { el.classList.add('in'); });
-    }, 2500);
+    setTimeout(function () { els.forEach(function (el) { el.classList.add('in'); }); }, 2500);
+    /* keep the floating contact button clear of the footer */
+    var fab = document.querySelector('.wa-fab');
+    var footer = document.querySelector('footer');
+    if (fab && footer) {
+      var fabCheck = function () {
+        var fr = footer.getBoundingClientRect();
+        fab.classList.toggle('hide', fr.top < window.innerHeight - 8 && fr.bottom > 0);
+      };
+      window.addEventListener('scroll', fabCheck, { passive: true });
+      window.addEventListener('resize', fabCheck);
+      fabCheck();
+    }
   }
 });
 </script>
